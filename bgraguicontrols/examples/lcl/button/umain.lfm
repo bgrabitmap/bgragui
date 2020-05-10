@@ -6,6 +6,7 @@ object frmMain: TfrmMain
   Caption = 'bgraguicontrols button'
   ClientHeight = 240
   ClientWidth = 320
+  Color = 5460819
   OnCreate = FormCreate
   LCLVersion = '2.0.8.0'
   object BGButton1: TBGButton

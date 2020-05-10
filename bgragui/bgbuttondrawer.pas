@@ -15,7 +15,7 @@ type
   TBGButtonDrawer = class(TPersistent)
   private
     {$IFDEF DEBUG}
-    FRedrawCount: Integer;
+    FRedrawCount: integer;
     {$ENDIF}
     FCaption: string;
     FOnChange: TNotifyEvent;
@@ -68,29 +68,62 @@ begin
 end;
 
 procedure TBGButtonDrawer.Draw(ABitmap: TBGRABitmap);
+var
+  ts: TSize;
+  Width, Height: integer;
 begin
   {$IFDEF DEBUG}
   Inc(FRedrawCount);
   {$ENDIF}
+  ts := ABitmap.TextSize(Caption);
+  Width := ABitmap.Width;
+  Height := ABitmap.Height;
   case FState of
     bsNormal:
     begin
-      ABitmap.Fill(BGRA(0, 100, 0));
+      { Button Normal }
+      ABitmap.GradientFill(0, 0, Width, Height, BGRA(107, 107, 107),
+        BGRA(84, 84, 84), gtLinear, PointF(0, 0), PointF(0, Height), dmSet);
+      ABitmap.Rectangle(0, 0, Width, Height - 1, BGRA(48, 48, 48), dmSet);
+      ABitmap.SetHorizLine(1, 1, Width - 2, BGRA(130, 130, 130));
+      ABitmap.SetHorizLine(0, Height - 1, Width - 1, BGRA(115, 115, 115));
     end;
     bsHover:
     begin
-      ABitmap.Fill(BGRA(50, 100, 50));
+      { Button Hovered }
+      ABitmap.GradientFill(0, 0, Width, Height, BGRA(132, 132, 132),
+        BGRA(109, 109, 109), gtLinear, PointF(0, 0), PointF(0, Height), dmSet);
+      ABitmap.Rectangle(0, 0, Width, Height - 1, BGRA(48, 48, 48), dmSet);
+      ABitmap.SetHorizLine(1, 1, Width - 2, BGRA(160, 160, 160));
+      ABitmap.SetHorizLine(0, Height - 1, Width - 1, BGRA(115, 115, 115));
     end;
     bsActive:
     begin
-      ABitmap.Fill(BGRA(75, 100, 75));
+      { Button Down }
+      ABitmap.Rectangle(0, 0, Width, Height - 1, BGRA(48, 48, 48),
+        BGRA(61, 61, 61), dmSet);
+      ABitmap.Rectangle(1, 1, Width - 1, Height - 2, BGRA(55, 55, 55),
+        BGRA(61, 61, 61), dmSet);
+      ABitmap.SetHorizLine(0, Height - 1, Width - 1, BGRA(115, 115, 115));
     end;
     bsDisabled:
     begin
-      ABitmap.Fill(BGRA(100, 100, 100));
+      { Button Disabled }
+      ABitmap.Rectangle(0, 0, Width, Height - 1, BGRA(48, 48, 48),
+        BGRA(61, 61, 61), dmSet);
+      ABitmap.SetHorizLine(0, Height - 1, Width - 1, BGRA(115, 115, 115));
     end;
   end;
-  ABitmap.TextRect(Rect(0, 0, ABitmap.Width, ABitmap.Height), FCaption, taCenter, tlCenter, BGRABlack);
+  if FState <> bsDisabled then
+  begin
+    ABitmap.TextOut((Width - ts.cx) div 2, ((Height - ts.cy) div 2) -
+      1, Caption, BGRA(47, 47, 47));
+    ABitmap.TextOut((Width - ts.cx) div 2, (Height - ts.cy) div 2,
+      Caption, BGRA(229, 229, 229));
+  end
+  else
+    ABitmap.TextOut((Width - ts.cx) div 2, (Height - ts.cy) div 2,
+      Caption, BGRA(170, 170, 170));
   {$IFDEF DEBUG}
   ABitmap.TextOut(0, 0, IntToStr(FRedrawCount), BGRA(255, 0, 0));
   {$ENDIF}

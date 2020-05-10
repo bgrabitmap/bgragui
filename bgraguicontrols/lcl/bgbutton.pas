@@ -120,13 +120,8 @@ begin
 end;
 
 procedure TBGButton.DoMouseDown;
-var
-  NewState: TBGButtonState;
 begin
-  NewState := bsActive;
-
-  if NewState <> FStyle.State then
-    FStyle.State := NewState;
+  FStyle.State := bsActive;
 end;
 
 procedure TBGButton.DoMouseUp;
@@ -141,40 +136,17 @@ begin
   else
     NewState := bsNormal;
 
-  if NewState <> FStyle.State then
-    FStyle.State := NewState;
+  FStyle.State := NewState;
 end;
 
 procedure TBGButton.DoMouseEnter;
-var
-  NewState: TBGButtonState;
 begin
-  if Enabled then
-    NewState := bsHover
-  else
-  begin
-    FStyle.State := bsNormal;
-    NewState := FStyle.State;
-  end;
-
-  if NewState <> FStyle.State then
-    FStyle.State := NewState;
+  FStyle.State := bsHover;
 end;
 
 procedure TBGButton.DoMouseLeave;
-var
-  NewState: TBGButtonState;
 begin
-  if Enabled then
-    NewState := bsNormal
-  else
-  begin
-    FStyle.State := bsNormal;
-    NewState := FStyle.State;
-  end;
-
-  if NewState <> FStyle.State then
-    FStyle.State := NewState;
+  FStyle.State := bsNormal;
 end;
 
 procedure TBGButton.DoMouseMove(x, y: integer);

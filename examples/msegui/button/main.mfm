@@ -1,0 +1,24 @@
+object mainfo: tmainfo
+  bounds_x = 291
+  bounds_y = 247
+  bounds_cx = 403
+  bounds_cy = 280
+  container.frame.localprops = []
+  container.frame.localprops1 = []
+  container.bounds = (
+    0
+    0
+    403
+    280
+  )
+  windowopacity = -Inf
+  moduleclassname = 'tmainform'
+  object tbgbutton1: tbgbutton
+    bounds_x = 8
+    bounds_y = 8
+    bounds_cx = 138
+    bounds_cy = 67
+    state = [as_localcaption]
+    caption = 'Hello World'
+  end
+end

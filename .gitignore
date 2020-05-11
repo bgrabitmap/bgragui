@@ -1,4 +1,6 @@
 *.bak
+*.bak*
+*.tmp*
 *.dbg
 *.exe
 *.lps

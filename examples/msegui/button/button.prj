@@ -474,7 +474,7 @@ bookmarks2=0
 sourcefiles=3
  /C:/Users/Damian/Documents/GitHub/bgragui/bgraguicontrols/examples/msegui/button/button.pas
  /C:/Users/Damian/Documents/GitHub/bgragui/bgraguicontrols/examples/msegui/button/main.pas
- /c:/users/damian/documents/github/mseide-msegui/lib/common/bgraguicontrols/bgbutton.pas
+ /C:/Users/Damian/Documents/GitHub/mseide-msegui/lib/common/bgraguicontrols/bgbutton.pas
 relpaths=3
  button.pas
  main.pas

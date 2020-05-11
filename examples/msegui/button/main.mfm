@@ -1,6 +1,6 @@
 object mainfo: tmainfo
-  bounds_x = 291
-  bounds_y = 247
+  bounds_x = 2
+  bounds_y = 172
   bounds_cx = 403
   bounds_cy = 280
   container.frame.localprops = []
@@ -16,9 +16,20 @@ object mainfo: tmainfo
   object tbgbutton1: tbgbutton
     bounds_x = 8
     bounds_y = 8
-    bounds_cx = 138
+    bounds_cx = 162
     bounds_cy = 67
+    anchors = [an_left, an_top, an_right]
     state = [as_localcaption]
     caption = 'Hello World'
+  end
+  object tbgbutton2: tbgbutton
+    taborder = 1
+    bounds_x = 8
+    bounds_y = 80
+    bounds_cx = 162
+    bounds_cy = 67
+    state = [as_localdisabled, as_localcaption, as_localonexecute]
+    caption = 'Enable / Disable'
+    onexecute = onExecuteButton2
   end
 end

@@ -12,6 +12,7 @@ type
     fbgra: TBGRABitmap;
     FStyle: TBGButtonDrawer;
   protected
+   procedure StyleChange(Sender: TObject); 
    procedure paint(const canvas: tcanvas); override;
   public
     constructor create(aowner: tcomponent); override;
@@ -30,6 +31,7 @@ constructor tbgbutton.create(aowner: tcomponent);
 begin
   fbgra := TBGRABitmap.Create(width, height);
   fstyle := TBGButtonDrawer.Create;
+  fstyle.onchange := @StyleChange;
   inherited;
 end;
 
@@ -39,6 +41,11 @@ begin
   fstyle.Free;
   inherited;
 end;
+
+procedure tbgbutton.StyleChange(Sender: TObject);
+begin
+  Invalidate;
+end; 
 
 procedure tbgbutton.paint(const canvas: tcanvas);
 begin

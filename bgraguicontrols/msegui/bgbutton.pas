@@ -12,9 +12,9 @@ type
     fbgra: TBGRABitmap;
     FStyle: TBGButtonDrawer;
   protected
-   procedure StyleChange(Sender: TObject); 
-   procedure paint(const canvas: tcanvas); override;
-  public
+   procedure StyleChange(Sender: TObject);
+  public 
+    procedure paint(const canvas: tcanvas); override;
     constructor create(aowner: tcomponent); override;
     destructor destroy; override;
   published

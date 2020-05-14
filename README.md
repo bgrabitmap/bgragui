@@ -26,6 +26,7 @@ You will have a new tab BGRAGUI Controls
 
 * In Settings > Configure MSEide add Global Macros for BGRABITMAPDIR "bgrabitmap\bgrabitmap", BGRAGUIDIR "bgragui\bgragui", BGRAGUICONTROLSDIR "bgragui\bgraguicontrols\msegui\".
 * Add ${BGRABITMAPDIR}, ${BGRAGUIDIR}, ${BGRAGUICONTROLSDIR} in Project Options > Make > Directories.
+* Add -dBGRABITMAP_USE_MSEGUI in Project Options > Make > Make options.
 * Modify "apps\myide\regcomponents.inc" to include "regbgraguicontrols,"
 * Build "apps\myide\mymseide.prj" with MSEide
 

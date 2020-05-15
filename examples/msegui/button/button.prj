@@ -20,6 +20,164 @@ order17=0
 [projectoptions]
 projectdir=/C:/Users/Damian/Documents/GitHub/bgragui/examples/msegui/button
 projectfilename=/C:/Users/Damian/Documents/GitHub/bgragui/examples/msegui/button/button.prj
+finddialog=8
+ [finddialogfo.selectedonly]
+ value=0
+ [finddialogfo]
+ stackedunder=
+ x=319
+ y=205
+ cx=371
+ cy=93
+options=133
+ [projectoptionsfo.toolshortcuts]
+ dropdowncolwidths=3
+  70
+  70
+  70
+ [projectoptionsfo.twidgetgrid3]
+ propcolwidthref=799
+ sortdescend0=0
+ sortdescend1=0
+ sortdescend2=0
+ sortdescend3=0
+ width4=107
+ sortdescend4=0
+ width5=86
+ sortdescend5=0
+ width6=55
+ sortdescend6=0
+ width7=55
+ sortdescend7=0
+ width8=116
+ sortdescend8=0
+ width9=326
+ sortdescend9=0
+ [projectoptionsfo.twidgetgrid4]
+ propcolwidthref=556
+ width_newfonames=96
+ sortdescend_newfonames=0
+ sortdescend_newinheritedforms=0
+ width_newfonamebases=73
+ sortdescend_newfonamebases=0
+ width_newfoformsuffix=69
+ sortdescend_newfoformsuffix=0
+ width_newfosources=293
+ sortdescend_newfosources=0
+ width_mewfoforms=252
+ sortdescend_mewfoforms=0
+ sorted=0
+ col=-1073741823
+ row=-1073741823
+ rowheight=15
+ [projectoptionsfo.newfile]
+ firsttab=0
+ index=0
+ [projectoptionsfo.fontaliasgrid]
+ propcolwidthref=462
+ width0=98
+ sortdescend0=0
+ width1=451
+ sortdescend1=0
+ width2=50
+ sortdescend2=0
+ width3=50
+ sortdescend3=0
+ width4=50
+ sortdescend4=0
+ width5=50
+ sortdescend5=0
+ width6=70
+ sortdescend6=0
+ [projectoptionsfo.macrosplitter]
+ x=0
+ y=122
+ xprop=1
+ yprop=0.23496240601504
+ [projectoptionsfo.macrogrid]
+ propcolwidthref=606
+ sortdescend0=0
+ sortdescend1=0
+ sortdescend2=0
+ sortdescend3=0
+ sortdescend4=0
+ sortdescend5=0
+ width6=146
+ sortdescend6=0
+ width7=594
+ sortdescend7=0
+ [projectoptionsfo.makeoptionsgrid]
+ propcolwidthref=739
+ values0=5
+  
+  
+  
+  
+  
+ width0=57
+ sortdescend0=0
+ sortdescend1=0
+ sortdescend2=0
+ sortdescend3=0
+ sortdescend4=0
+ sortdescend5=0
+ sortdescend6=0
+ sortdescend7=0
+ values8=5
+  -Xg -l -Mobjfpc -Sh -Fcutf8
+  -gl -O-
+  -B
+  -O2 -XX -Xs -CX
+  -dBGRABITMAP_USE_MSEGUI
+ sortdescend8=0
+ [projectoptionsfo.makegroupbox]
+ firsttab=0
+ index=2
+ [projectoptionsfo.exceptionsgrid]
+ propcolwidthref=783
+ width0=47
+ sortdescend0=0
+ width1=777
+ sortdescend1=0
+ [projectoptionsfo.ttabwidget1]
+ firsttab=0
+ index=0
+ [projectoptionsfo.filefiltergrid]
+ propcolwidthref=691
+ width0=112
+ sortdescend0=0
+ width1=684
+ sortdescend1=0
+ [projectoptionsfo.ttabwidget2]
+ firsttab=0
+ index=0
+ [projectoptionsfo.ttabwidget3]
+ firsttab=0
+ index=0
+ [projectoptionsfo.tabwidget]
+ firsttab=0
+ index=2
+ [projectoptionsfo]
+ stackedunder=
+ x=205
+ y=177
+ cx=832
+ cy=581
+settings=14
+ [settingsfo.macrogrid]
+ propcolwidthref=302
+ width0=151
+ sortdescend0=0
+ width1=144
+ sortdescend1=0
+ [settingsfo]
+ x=100
+ y=106
+ cx=348
+ cy=570
+ wsize=0
+ active=1
+ visible=1
 sourcefilemasks=3
  "*.pas" "*.dpr" "*.lpr" "*.pp" "*.inc"
  "*.c" "*.cc" "*.h"
@@ -125,7 +283,10 @@ mainfile=${PROJECTNAME}.pas
 targetfile=${PROJECTNAME}${EXEEXT}
 makecommand=${COMPILER}
 makedir=
-unitdirs=3
+unitdirs=6
+ ${BGRAGUICONTROLSDIR}
+ ${BGRAGUIDIR}
+ ${BGRABITMAPDIR}
  ${MSEDIR}lib/addon/*/
  ${MSELIBDIR}kernel/$TARGETOSDIR/
  ${MSELIBDIR}*/
@@ -136,21 +297,31 @@ objpref=-Fo
 targpref=-o
 befcommand=0
 aftcommand=0
-makeoptions=4
+makeoptions=5
  -Xg -l -Mobjfpc -Sh -Fcutf8
  -gl -O-
  -B
  -O2 -XX -Xs -CX
+ -dBGRABITMAP_USE_MSEGUI
 reversepathorder=0
-makeoptpurpose=0
+makeoptpurpose=5
+ 
+ 
+ 
+ 
+ 
 befcommandon=0
-makeoptionson=4
+makeoptionson=5
  63
  31
  34
  32
+ 63
 aftcommandon=0
-unitdirson=3
+unitdirson=6
+ 983103
+ 983103
+ 983103
  196671
  65599
  65599
@@ -351,7 +522,7 @@ newinheritedforms=12
  0
  0
  0
- 255
+ 1
 toolmenus=0
 toolfiles=0
 toolparams=0
@@ -461,25 +632,36 @@ envvarons=0
 [edit]
 hintwidth=0
 hintheight=0
-finddtext=
-findhistory=0
+finddtext=tbitmap
+findhistory=1
+ tbitmap
 findoptions=1
-editpos=3
- 0,-1073741823
- 0,-1073741823
- 28,46
+editpos=5
+ 0,0
+ 20,10
+ 0,0
+ 0,0
+ 0,0
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
-sourcefiles=3
- /C:/Users/Damian/Documents/GitHub/bgragui/bgraguicontrols/examples/msegui/button/button.pas
- /C:/Users/Damian/Documents/GitHub/bgragui/bgraguicontrols/examples/msegui/button/main.pas
- /C:/Users/Damian/Documents/GitHub/mseide-msegui/lib/common/bgraguicontrols/bgbutton.pas
-relpaths=3
+bookmarks3=0
+bookmarks4=0
+sourcefiles=5
+ /C:/Users/Damian/Documents/GitHub/bgragui/examples/msegui/button/button.pas
+ /C:/Users/Damian/Documents/GitHub/bgragui/examples/msegui/button/main.pas
+ /C:/Users/Damian/Documents/GitHub/mseide-msegui/lib/common/kernel/msetypes.pas
+ /c:/users/damian/documents/github/mseide-msegui/lib/common/graphics/msegraphutils.pas
+ /c:/users/damian/documents/github/mseide-msegui/lib/common/kernel/mseevent.pas
+relpaths=5
  button.pas
  main.pas
- ../../../../mseide-msegui/lib/common/bgraguicontrols/bgbutton.pas
-ismoduletexts=3
+ ../../../../mseide-msegui/lib/common/kernel/msetypes.pas
+ ../../../../mseide-msegui/lib/common/graphics/msegraphutils.pas
+ ../../../../mseide-msegui/lib/common/kernel/mseevent.pas
+ismoduletexts=5
+ 0
+ 0
  0
  0
  0
@@ -492,9 +674,15 @@ visiblemodules=1
 nomenumodules=1
  0
 [sourcefo.tabwidget]
+order=5
+ 0
+ 1
+ 4
+ 3
+ 2
 tabsize=114
 firsttab=0
-index=2
+index=1
 [layout]
 windowlayout=567
  [mainfo.openform]
@@ -538,7 +726,7 @@ windowlayout=567
  ncy=0
  x=8
  y=31
- cx=323
+ cx=389
  cy=64
  rcx=0
  rcy=0
@@ -749,15 +937,15 @@ windowlayout=567
  [objectinspectorfo]
  splitdir=0
  useroptions=268451947
- stackedunder=mainfo.panel1
+ stackedunder=_mse_mainfo_mse_
  parent=
  mdistate=0
  nx=0
  ny=0
  ncx=0
  ncy=0
- x=724
- y=157
+ x=994
+ y=164
  cx=296
  cy=566
  rcx=0
@@ -767,9 +955,9 @@ windowlayout=567
  visible=1
  [objectinspectorfo.grid]
  propcolwidthref=286
- width0=105
+ width0=106
  sortdescend0=0
- width1=175
+ width1=174
  sortdescend1=0
  [symbolfo]
  splitdir=0
@@ -855,18 +1043,18 @@ windowlayout=567
  splitdir=0
  useroptions=268484715
  parent=mainfo.panel1.container
- visible=0
+ visible=1
  mdistate=0
  nx=0
  ny=0
  ncx=0
  ncy=0
  x=0
- y=510
+ y=361
  cx=675
- cy=95
- rcx=675
- rcy=605
+ cy=244
+ rcx=0
+ rcy=0
  [componentstorefo]
  splitdir=0
  useroptions=268460155
@@ -933,7 +1121,7 @@ windowlayout=567
  [componentpalettefo]
  splitdir=0
  useroptions=268460139
- stackedunder=_mse_mainfo_mse_
+ stackedunder=objectinspectorfo
  parent=
  mdistate=0
  nx=0
@@ -963,7 +1151,7 @@ windowlayout=567
  ncy=0
  x=0
  y=0
- cx=313
+ cx=379
  cy=30
  rcx=0
  rcy=0
@@ -980,7 +1168,7 @@ windowlayout=567
  x=0
  y=0
  cx=675
- cy=605
+ cy=358
  rcx=0
  rcy=0
  [actionsmo.watchesonact]
@@ -1017,8 +1205,8 @@ windowlayout=567
  ny=0
  ncx=0
  ncy=0
- x=8
- y=118
+ x=35
+ y=403
  cx=685
  cy=605
  rcx=0
@@ -1048,15 +1236,15 @@ windowlayout=567
  [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=objectinspectorfo
+ stackedunder=mainfo.panel1
  parent=
  mdistate=3
  nx=0
  ny=0
  ncx=0
  ncy=0
- x=291
- y=247
+ x=2
+ y=172
  cx=413
  cy=280
  rcx=0

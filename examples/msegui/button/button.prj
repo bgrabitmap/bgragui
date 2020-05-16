@@ -637,11 +637,11 @@ findhistory=1
  tbitmap
 findoptions=1
 editpos=5
- 0,0
- 20,10
- 0,0
- 0,0
- 0,0
+ 0,-1073741823
+ 28,6
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
@@ -703,7 +703,7 @@ windowlayout=567
  cy=0
  [mainfo.openfile]
  filenames=0
- filecolwidth=0
+ filecolwidth=174
  x=0
  y=0
  cx=0
@@ -937,7 +937,7 @@ windowlayout=567
  [objectinspectorfo]
  splitdir=0
  useroptions=268451947
- stackedunder=_mse_mainfo_mse_
+ stackedunder=mainfo
  parent=
  mdistate=0
  nx=0
@@ -1043,7 +1043,7 @@ windowlayout=567
  splitdir=0
  useroptions=268484715
  parent=mainfo.panel1.container
- visible=1
+ visible=0
  mdistate=0
  nx=0
  ny=0
@@ -1053,8 +1053,8 @@ windowlayout=567
  y=361
  cx=675
  cy=244
- rcx=0
- rcy=0
+ rcx=675
+ rcy=605
  [componentstorefo]
  splitdir=0
  useroptions=268460155
@@ -1121,7 +1121,7 @@ windowlayout=567
  [componentpalettefo]
  splitdir=0
  useroptions=268460139
- stackedunder=objectinspectorfo
+ stackedunder=mainfo.panel1
  parent=
  mdistate=0
  nx=0
@@ -1168,7 +1168,7 @@ windowlayout=567
  x=0
  y=0
  cx=675
- cy=358
+ cy=605
  rcx=0
  rcy=0
  [actionsmo.watchesonact]
@@ -1198,7 +1198,7 @@ windowlayout=567
  [mainfo.panel1]
  splitdir=2
  useroptions=302022123
- stackedunder=mainfo
+ stackedunder=_mse_mainfo_mse_
  parent=
  mdistate=0
  nx=0
@@ -1236,7 +1236,7 @@ windowlayout=567
  [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=mainfo.panel1
+ stackedunder=objectinspectorfo
  parent=
  mdistate=3
  nx=0

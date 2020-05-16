@@ -5,7 +5,7 @@ unit BGButtonDrawer;
 interface
 
 uses
-  Classes, SysUtils, Types, BGRABitmap, BGRABitmapTypes;
+  Classes, {$IFDEF BGRABITMAP_USE_MSEGUI} mclasses, {$ENDIF} SysUtils, Types, BGRABitmap, BGRABitmapTypes;
 
 type
   TBGButtonState = (bsNormal, bsHover, bsActive, bsDisabled);

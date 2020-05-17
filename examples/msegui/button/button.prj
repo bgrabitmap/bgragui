@@ -178,6 +178,12 @@ settings=14
  wsize=0
  active=1
  visible=1
+colordialog=5
+ [colordialogfo]
+ x=140
+ y=234
+ cx=338
+ cy=298
 sourcefilemasks=3
  "*.pas" "*.dpr" "*.lpr" "*.pp" "*.inc"
  "*.c" "*.cc" "*.h"
@@ -638,17 +644,17 @@ findhistory=2
  tbitmap
 findoptions=1
 editpos=11
- 0,0
+ 0,-1073741823
  29,29
- 0,0
- 0,0
- 0,0
- 0,16
- 0,0
- 0,81
- 0,1335
- 0,79
- 0,33
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
@@ -721,7 +727,7 @@ tabsize=114
 firsttab=0
 index=2
 [layout]
-windowlayout=569
+windowlayout=568
  [mainfo.openform]
  filenames=0
  filecolwidth=0
@@ -739,8 +745,7 @@ windowlayout=569
  cx=0
  cy=0
  [mainfo.openfile]
- filenames=1
-  /C:/Users/Damian/Documents/GitHub/bgragui/bgraguicontrols/msegui/bgbutton.pas
+ filenames=0
  filecolwidth=174
  x=0
  y=0
@@ -976,7 +981,7 @@ windowlayout=569
  [objectinspectorfo]
  splitdir=0
  useroptions=268451947
- stackedunder=mainfo.panel1
+ stackedunder=mainfo
  parent=
  mdistate=0
  nx=0
@@ -1237,7 +1242,7 @@ windowlayout=569
  [mainfo.panel1]
  splitdir=2
  useroptions=302022123
- stackedunder=mainfo
+ stackedunder=_mse_mainfo_mse_
  parent=
  mdistate=0
  nx=0
@@ -1256,14 +1261,14 @@ windowlayout=569
  [mainfo.panel2]
  splitdir=2
  useroptions=302022123
- stackedunder=_mse_mainfo_mse_
+ stackedunder=mainfo.panel1
  parent=
  mdistate=0
  nx=0
  ny=0
  ncx=0
  ncy=0
- x=1607
+ x=1597
  y=213
  cx=323
  cy=534

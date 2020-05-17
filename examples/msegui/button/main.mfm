@@ -1,4 +1,5 @@
 object mainfo: tmainfo
+  color = 5460819
   bounds_x = 2
   bounds_y = 172
   bounds_cx = 403
@@ -24,7 +25,6 @@ object mainfo: tmainfo
     onexecute = onExecuteButton1
     Style.State = bsNormal
     Style.Caption = 'Hello World'
-    Style.OnChange = nil
   end
   object tbgbutton2: tbgbutton
     taborder = 1
@@ -38,6 +38,5 @@ object mainfo: tmainfo
     onexecute = onExecuteButton2
     Style.State = bsNormal
     Style.Caption = 'Enable / Disable'
-    Style.OnChange = nil
   end
 end

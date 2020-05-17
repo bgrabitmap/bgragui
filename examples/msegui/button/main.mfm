@@ -19,8 +19,12 @@ object mainfo: tmainfo
     bounds_cx = 162
     bounds_cy = 67
     anchors = [an_left, an_top, an_right]
-    state = [as_localcaption]
+    state = [as_localcaption, as_localonexecute]
     caption = 'Hello World'
+    onexecute = onExecuteButton1
+    Style.State = bsNormal
+    Style.Caption = 'Hello World'
+    Style.OnChange = nil
   end
   object tbgbutton2: tbgbutton
     taborder = 1
@@ -28,8 +32,12 @@ object mainfo: tmainfo
     bounds_y = 80
     bounds_cx = 162
     bounds_cy = 67
+    anchors = [an_left, an_top, an_right]
     state = [as_localdisabled, as_localcaption, as_localonexecute]
     caption = 'Enable / Disable'
     onexecute = onExecuteButton2
+    Style.State = bsNormal
+    Style.Caption = 'Enable / Disable'
+    Style.OnChange = nil
   end
 end

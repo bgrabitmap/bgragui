@@ -12,6 +12,7 @@ type
    tbgbutton2: tbgbutton;
    
    procedure onExecuteButton2(const sender: TObject);
+   procedure onExecuteButton1(const sender: TObject);
  end;
 var
  mainfo: tmainfo;
@@ -20,8 +21,13 @@ uses
  main_mfm;
 procedure tmainfo.onExecuteButton2(const sender: TObject);
 begin
-  tbgbutton1.Style.State := bsDisabled;
+  tbgbutton1.Enabled := not tbgbutton1.Enabled;
 
+end;
+
+procedure tmainfo.onExecuteButton1(const sender: TObject);
+begin
+  showmessage('Hello World');
 end;
 
 end.

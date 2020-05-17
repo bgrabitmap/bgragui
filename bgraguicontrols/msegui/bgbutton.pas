@@ -13,6 +13,7 @@ type
     FStyle: TBGButtonDrawer;
   protected
    procedure StyleChange(Sender: TObject);
+   procedure setenabled(const avalue: boolean); override;
   public 
     procedure paint(const canvas: tcanvas); override;
     constructor create(aowner: tcomponent); override;
@@ -49,11 +50,30 @@ end;
 
 procedure tbgbutton.paint(const canvas: tcanvas);
 begin
+  if enabled then
+  begin
+    if (shs_clicked in finfo.state) then
+      fstyle.State := bsActive
+    else if (shs_mouse in finfo.state) then
+      fstyle.State := bsHover
+	else
+	  fstyle.State := bsNormal;
+  end;
+	
   if (Width <> FBGRA.Width) or (Height <> FBGRA.Height) then
     FBGRA.SetSize(Width, Height);
   fstyle.Caption := caption;
   fstyle.Draw(fbgra);
   fbgra.Draw(canvas, 0, 0);
+end;
+
+procedure tbgbutton.setenabled(const avalue: boolean);
+begin
+  if avalue then
+    FStyle.State := bsNormal
+  else
+    FStyle.State := bsDisabled;
+  inherited setenabled(avalue);
 end;
 
 end.

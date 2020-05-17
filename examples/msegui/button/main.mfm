@@ -39,4 +39,20 @@ object mainfo: tmainfo
     Style.State = bsNormal
     Style.Caption = 'Enable / Disable'
   end
+  object TBGRAFlashProgressBar1: TBGRAFlashProgressBar
+    color = 6450348
+    taborder = 2
+    visible = True
+    bounds_x = 8
+    bounds_y = 152
+    bounds_cx = 266
+    bounds_cy = 42
+    MinValue = 0
+    MaxValue = 100
+    Value = 30
+    BackgroundColor = 16777215
+    BackgroundRandomizeMinIntensity = 4000
+    BackgroundRandomizeMaxIntensity = 5000
+    BackgroundRandomize = True
+  end
 end

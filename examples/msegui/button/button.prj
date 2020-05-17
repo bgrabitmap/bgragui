@@ -645,11 +645,11 @@ findhistory=2
 findoptions=1
 editpos=11
  0,-1073741823
- 29,29
+ 0,19
  0,-1073741823
  0,-1073741823
  0,-1073741823
- 0,-1073741823
+ 0,7
  0,-1073741823
  0,-1073741823
  0,-1073741823
@@ -673,11 +673,11 @@ sourcefiles=11
  /C:/Users/Damian/Documents/GitHub/mseide-msegui/lib/common/graphics/msegraphutils.pas
  /C:/Users/Damian/Documents/GitHub/mseide-msegui/lib/common/kernel/mseevent.pas
  /C:/Users/Damian/Documents/GitHub/bgragui/bgraguicontrols/msegui/bgbutton.pas
- /c:/users/damian/documents/github/mseide-msegui/lib/common/graphics/msegraphics.pas
- /c:/users/damian/documents/github/mseide-msegui/lib/common/widgets/msesimplewidgets.pas
- /c:/users/damian/documents/github/mseide-msegui/lib/common/widgets/msewidgets.pas
- /c:/users/damian/documents/github/mseide-msegui/lib/common/kernel/mseshapes.pas
- /c:/users/damian/documents/github/mseide-msegui/lib/common/kernel/mseact.pas
+ /C:/Users/Damian/Documents/GitHub/mseide-msegui/lib/common/graphics/msegraphics.pas
+ /C:/Users/Damian/Documents/GitHub/mseide-msegui/lib/common/widgets/msesimplewidgets.pas
+ /C:/Users/Damian/Documents/GitHub/mseide-msegui/lib/common/widgets/msewidgets.pas
+ /C:/Users/Damian/Documents/GitHub/mseide-msegui/lib/common/kernel/mseshapes.pas
+ /C:/Users/Damian/Documents/GitHub/mseide-msegui/lib/common/kernel/mseact.pas
 relpaths=11
  button.pas
  main.pas
@@ -725,7 +725,7 @@ order=11
  2
 tabsize=114
 firsttab=0
-index=2
+index=3
 [layout]
 windowlayout=568
  [mainfo.openform]
@@ -981,7 +981,7 @@ windowlayout=568
  [objectinspectorfo]
  splitdir=0
  useroptions=268451947
- stackedunder=mainfo
+ stackedunder=_mse_mainfo_mse_
  parent=
  mdistate=0
  nx=0
@@ -1165,7 +1165,7 @@ windowlayout=568
  [componentpalettefo]
  splitdir=0
  useroptions=268460139
- stackedunder=mainfo.panel2
+ stackedunder=mainfo.panel1
  parent=
  mdistate=0
  nx=0
@@ -1242,7 +1242,7 @@ windowlayout=568
  [mainfo.panel1]
  splitdir=2
  useroptions=302022123
- stackedunder=_mse_mainfo_mse_
+ stackedunder=objectinspectorfo
  parent=
  mdistate=0
  nx=0
@@ -1261,7 +1261,7 @@ windowlayout=568
  [mainfo.panel2]
  splitdir=2
  useroptions=302022123
- stackedunder=mainfo.panel1
+ stackedunder=componentpalettefo
  parent=
  mdistate=0
  nx=0
@@ -1280,7 +1280,7 @@ windowlayout=568
  [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=objectinspectorfo
+ stackedunder=mainfo
  parent=
  mdistate=3
  nx=0

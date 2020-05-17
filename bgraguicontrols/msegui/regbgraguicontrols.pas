@@ -5,11 +5,11 @@ interface
 
 implementation
 uses
- msedesignintf, bgbutton;
+ msedesignintf, bgbutton, bgraflashprogressbar;
 
 procedure register;
 begin
- registercomponents('BGRAGUI Controls',[tbgbutton]);
+ registercomponents('BGRAGUI Controls',[tbgbutton,tbgraflashprogressbar]);
 end;
 
 initialization

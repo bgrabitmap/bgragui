@@ -4,13 +4,14 @@ interface
 uses
  msetypes,mseglob,mseguiglob,mseguiintf,mseapplication,msestat,msemenus,msegui,
  msegraphics,msegraphutils,mseevent,mseclasses,msewidgets,mseforms,bgbutton,
- msesimplewidgets, bgbuttondrawer;
+ msesimplewidgets, bgbuttondrawer,BGRAFlashProgressBar;
 
 type
  tmainfo = class(tmainform)
    tbgbutton1: tbgbutton;
    tbgbutton2: tbgbutton;
    
+   TBGRAFlashProgressBar1: TBGRAFlashProgressBar;
    procedure onExecuteButton2(const sender: TObject);
    procedure onExecuteButton1(const sender: TObject);
  end;

@@ -645,13 +645,13 @@ findhistory=2
 findoptions=1
 editpos=11
  0,-1073741823
- 0,19
+ 17,7
  0,-1073741823
  0,-1073741823
  0,-1073741823
- 0,7
  0,-1073741823
  0,-1073741823
+ 35,710
  0,-1073741823
  0,-1073741823
  0,-1073741823
@@ -725,7 +725,7 @@ order=11
  2
 tabsize=114
 firsttab=0
-index=3
+index=4
 [layout]
 windowlayout=568
  [mainfo.openform]
@@ -1165,7 +1165,7 @@ windowlayout=568
  [componentpalettefo]
  splitdir=0
  useroptions=268460139
- stackedunder=mainfo.panel1
+ stackedunder=objectinspectorfo
  parent=
  mdistate=0
  nx=0
@@ -1242,7 +1242,7 @@ windowlayout=568
  [mainfo.panel1]
  splitdir=2
  useroptions=302022123
- stackedunder=objectinspectorfo
+ stackedunder=componentpalettefo
  parent=
  mdistate=0
  nx=0
@@ -1261,7 +1261,7 @@ windowlayout=568
  [mainfo.panel2]
  splitdir=2
  useroptions=302022123
- stackedunder=componentpalettefo
+ stackedunder=mainfo.panel1
  parent=
  mdistate=0
  nx=0

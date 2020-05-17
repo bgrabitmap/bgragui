@@ -12,12 +12,13 @@ type
 
   { TBGRAFlashProgressBar }
 
-  TBGRAFlashProgressBar = class(tsimplewidget)
+  TBGRAFlashProgressBar = class(tpaintbox)
   private
     FBackgroundRandomize: boolean;
     FBackgroundRandomizeMaxIntensity: word;
     FBackgroundRandomizeMinIntensity: word;
     FBackgroundColor: colorty;
+	FBarColor: colorty;
     FMaxValue: integer;
     FMinValue: integer;
     FValue:    integer;
@@ -28,6 +29,7 @@ type
     procedure SetFBackgroundRandomizeMaxIntensity(AValue: word);
     procedure SetFBackgroundRandomizeMinIntensity(AValue: word);
     procedure SetFBackgroundColor(AValue: colorty);
+	procedure SetFBarColor(AValue: colorty);
     procedure SetMaxValue(const AValue: integer);
     procedure SetMinValue(const AValue: integer);
     procedure SetValue(const AValue: integer);
@@ -44,6 +46,7 @@ type
     property MaxValue: integer Read FMaxValue Write SetMaxValue;
     property Value: integer Read FValue Write SetValue;
     property OnRedraw: TBGRAProgressBarRedrawEvent read FOnredraw write FOnRedraw;
+	property BarColor: colorty read FBarColor write SetFBarColor;
     property BackgroundColor: colorty read FBackgroundColor write SetFBackgroundColor;
     property BackgroundRandomizeMinIntensity: word read FBackgroundRandomizeMinIntensity write SetFBackgroundRandomizeMinIntensity;
     property BackgroundRandomizeMaxIntensity: word read FBackgroundRandomizeMaxIntensity write SetFBackgroundRandomizeMaxIntensity;
@@ -95,7 +98,7 @@ var
   var
     lCol: TBGRAPixel;
   begin
-    lCol := Color;
+    lCol := FBarColor;
 
     DoubleGradientAlphaFill(FBmp, bounds,
       ApplyLightness(lCol, 37000), ApplyLightness(lCol, 29000),
@@ -111,6 +114,7 @@ var
   end;
 
 begin
+inherited;
   tx := ClientWidth;
   ty := ClientHeight;
   if Assigned(FBmp) and ((FBmp.Width <> tx) or (FBmp.Height <> ty)) then
@@ -198,6 +202,13 @@ procedure TBGRAFlashProgressBar.SetFBackgroundColor(AValue: colorty);
 begin
   if FBackgroundColor=AValue then Exit;
   FBackgroundColor:=AValue;
+  Invalidate;
+end;
+
+procedure TBGRAFlashProgressBar.SetFBarColor(AValue: colorty);
+begin
+  if FBarColor=AValue then Exit;
+  FBarColor:=AValue;
   Invalidate;
 end;
 

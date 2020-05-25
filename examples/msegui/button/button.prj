@@ -645,13 +645,13 @@ findhistory=2
 findoptions=1
 editpos=11
  0,-1073741823
- 17,7
+ 16,7
  0,-1073741823
  0,-1073741823
  0,-1073741823
  0,-1073741823
  0,-1073741823
- 35,710
+ 0,710
  0,-1073741823
  0,-1073741823
  0,-1073741823
@@ -988,8 +988,8 @@ windowlayout=568
  ny=0
  ncx=0
  ncy=0
- x=1296
- y=219
+ x=1290
+ y=215
  cx=296
  cy=566
  rcx=0
@@ -1094,11 +1094,11 @@ windowlayout=568
  ncx=0
  ncy=0
  x=0
- y=361
+ y=3
  cx=1234
- cy=244
+ cy=475
  rcx=1234
- rcy=605
+ rcy=478
  [componentstorefo]
  splitdir=0
  useroptions=268460155
@@ -1212,7 +1212,7 @@ windowlayout=568
  x=0
  y=0
  cx=1234
- cy=605
+ cy=478
  rcx=0
  rcy=0
  [actionsmo.watchesonact]
@@ -1250,9 +1250,9 @@ windowlayout=568
  ncx=0
  ncy=0
  x=35
- y=403
+ y=530
  cx=1244
- cy=605
+ cy=478
  rcx=0
  rcy=0
  wsize=0

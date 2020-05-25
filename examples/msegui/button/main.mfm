@@ -54,18 +54,19 @@ object mainfo: tmainfo
   end
   object TBGRAFlashProgressBar1: TBGRAFlashProgressBar
     optionswidget = [ow_mousefocus, ow_tabfocus, ow_arrowfocus, ow_mousewheel, ow_destroywidgets]
+    color = -2147483645
     frame.localprops = []
     frame.localprops1 = []
     taborder = 3
     bounds_x = 8
-    bounds_y = 152
-    bounds_cx = 290
+    bounds_y = 160
+    bounds_cx = 250
     bounds_cy = 50
     MinValue = 0
     MaxValue = 100
     Value = 30
-    BarColor = 41932
-    BackgroundColor = 16777215
+    BarColor = 6726626
+    BackgroundColor = 3092271
     BackgroundRandomizeMinIntensity = 4000
     BackgroundRandomizeMaxIntensity = 5000
     BackgroundRandomize = True

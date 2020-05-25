@@ -5,7 +5,7 @@ uses
  msetypes,mseglob,mseguiglob,mseguiintf,mseapplication,msestat,msemenus,msegui,
  msegraphics,msegraphutils,mseevent,mseclasses,msewidgets,mseforms,bgbutton,
  msesimplewidgets, bgbuttondrawer,BGRAFlashProgressBar, BGRABitmap,
-  BGRABitmapTypes;
+ BGRABitmapTypes;
 
 type
  tmainfo = class(tmainform)

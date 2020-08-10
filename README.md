@@ -14,7 +14,7 @@ You will have a new tab BGRAGUI Controls
 
 ## Option 1 - Copy
 
-* Copy "bgrabitmap" from bgrabitmap repository into "/mseide-msegui/lib/common/bgrabitmap/"
+* Copy "bgrabitmap" folder contents into "/mseide-msegui/lib/common/bgrabitmap/"
 * Copy "bgragui" folder contents into "/mseide-msegui/lib/common/bgragui/"
 * Copy "bgraguicontrols/msegui/" folder contents into "/mseide-msegui/lib/common/bgraguicontrols/"
 * Open /mseide-msegui/apps/myide/mymseide.prj
@@ -28,7 +28,7 @@ You will have a new tab BGRAGUI Controls
 
 ## Option 2 - Defines
 
-* In Settings > Configure MSEide add Global Macros for BGRABITMAPDIR "bgrabitmap/bgrabitmap", BGRAGUIDIR "bgragui/bgragui", BGRAGUICONTROLSDIR "bgragui/bgraguicontrols/msegui".
+* In Settings > Configure MSEide, add Global Macros with BGRABITMAPDIR = "/directoryof/bgrabitmap/bgrabitmap", BGRAGUIDIR = "/directoryof/bgragui/bgragui", BGRAGUICONTROLSDIR = "/directoryof/bgragui/bgraguicontrols/msegui".
 * Open mseide-msegui/apps/myide/mymseide.prj and add ${BGRABITMAPDIR}, ${BGRAGUIDIR}, ${BGRAGUICONTROLSDIR} in Project Options > Make > Directories.
 * Add "-dBGRABITMAP_USE_MSEGUI" in Project Options > Make > Make options.
 * Add "-dclass_bridge" in Project Options > Make > Make options.

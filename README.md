@@ -20,7 +20,6 @@ You will have a new tab BGRAGUI Controls
 * Open /mseide-msegui/apps/myide/mymseide.prj
 * Add "-dBGRABITMAP_USE_MSEGUI" in Project Options > Make > Make options.
 * Add "-dclass_bridge" in Project Options > Make > Make options.
-* Add directory of "/lazarus/components/lazutils" in Project Options > Make > Directories.
 * Modify "/mseide-msegui/apps/myide/regcomponents.inc" to include "regbgraguicontrols,"
 * Build "/mseide-msegui/apps/myide/mymseide.prj" with MSEide
 
@@ -32,7 +31,6 @@ You will have a new tab BGRAGUI Controls
 * Open mseide-msegui/apps/myide/mymseide.prj and add ${BGRABITMAPDIR}, ${BGRAGUIDIR}, ${BGRAGUICONTROLSDIR} in Project Options > Make > Directories.
 * Add "-dBGRABITMAP_USE_MSEGUI" in Project Options > Make > Make options.
 * Add "-dclass_bridge" in Project Options > Make > Make options.
-* Add directory of "/lazarus/components/lazutils" in Project Options > Make > Directories.
 * Modify "/mseide-msegui/apps/myide/regcomponents.inc" to include "regbgraguicontrols,"
 * Build "/mseide-msegui/apps/myide/mymseide.prj" with MSEide
 

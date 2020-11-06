@@ -1,0 +1,34 @@
+object frmMain: TfrmMain
+  Left = 292
+  Height = 240
+  Top = 284
+  Width = 320
+  Caption = 'bgraguicontrols button'
+  ClientHeight = 240
+  ClientWidth = 320
+  Color = 5460819
+  OnCreate = FormCreate
+  LCLVersion = '2.0.8.0'
+  object BGButton1: TBGButton
+    Left = 8
+    Height = 100
+    Top = 8
+    Width = 200
+    Style.State = bsNormal
+    Style.Caption = 'Hello World'
+    Anchors = [akTop, akLeft, akRight]
+    Caption = 'Hello World'
+    OnClick = BGButton1Click
+  end
+  object BGButton2: TBGButton
+    Left = 8
+    Height = 100
+    Top = 120
+    Width = 200
+    Style.State = bsNormal
+    Style.Caption = 'Enable / Disable'
+    Anchors = [akTop, akLeft, akRight]
+    Caption = 'Enable / Disable'
+    OnClick = BGButton2Click
+  end
+end

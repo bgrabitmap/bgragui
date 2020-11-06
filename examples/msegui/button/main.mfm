@@ -1,0 +1,74 @@
+object mainfo: tmainfo
+  color = 5460819
+  bounds_x = 2
+  bounds_y = 172
+  bounds_cx = 403
+  bounds_cy = 280
+  container.frame.localprops = []
+  container.frame.localprops1 = []
+  container.bounds = (
+    0
+    0
+    403
+    280
+  )
+  windowopacity = -Inf
+  moduleclassname = 'tmainform'
+  object tbgbutton1: tbgbutton
+    bounds_x = 8
+    bounds_y = 8
+    bounds_cx = 162
+    bounds_cy = 67
+    anchors = [an_left, an_top, an_right]
+    state = [as_localcaption, as_localonexecute]
+    caption = 'Hello World'
+    onexecute = onExecuteButton1
+    Style.State = bsNormal
+    Style.Caption = 'Hello World'
+    Style.OnChange = nil
+  end
+  object tbgbutton2: tbgbutton
+    taborder = 1
+    bounds_x = 8
+    bounds_y = 80
+    bounds_cx = 162
+    bounds_cy = 67
+    anchors = [an_left, an_top, an_right]
+    state = [as_localdisabled, as_localcaption, as_localonexecute]
+    caption = 'Enable / Disable'
+    onexecute = onExecuteButton2
+    Style.State = bsNormal
+    Style.Caption = 'Enable / Disable'
+    Style.OnChange = nil
+  end
+  object tpaintbox1: tpaintbox
+    optionswidget = [ow_mousefocus, ow_tabfocus, ow_arrowfocus, ow_mousewheel, ow_destroywidgets]
+    frame.localprops = []
+    frame.localprops1 = []
+    taborder = 2
+    onpaint = PaintBoxPaint
+    bounds_x = 224
+    bounds_y = 24
+    bounds_cx = 114
+    bounds_cy = 106
+  end
+  object TBGRAFlashProgressBar1: TBGRAFlashProgressBar
+    optionswidget = [ow_mousefocus, ow_tabfocus, ow_arrowfocus, ow_mousewheel, ow_destroywidgets]
+    color = -2147483645
+    frame.localprops = []
+    frame.localprops1 = []
+    taborder = 3
+    bounds_x = 8
+    bounds_y = 160
+    bounds_cx = 250
+    bounds_cy = 50
+    MinValue = 0
+    MaxValue = 100
+    Value = 30
+    BarColor = 6726626
+    BackgroundColor = 3092271
+    BackgroundRandomizeMinIntensity = 4000
+    BackgroundRandomizeMaxIntensity = 5000
+    BackgroundRandomize = True
+  end
+end
